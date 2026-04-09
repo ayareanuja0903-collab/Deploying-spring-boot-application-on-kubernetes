@@ -83,16 +83,7 @@ docker push anujaayare/springboot-crud-k8s:1.0
 
 ---
 
-### 🔹 Step 7: Deploy MySQL on Kubernetes
-
-```bash
-kubectl apply -f k8s/mysql-deployment.yaml
-kubectl apply -f k8s/mysql-service.yaml
-```
-
----
-
-### 🔹 Step 8: Deploy Spring Boot App
+### 🔹 Step :7 Deploy Spring Boot App
 
 ```bash
 kubectl apply -f k8s/app-deployment.yaml
@@ -101,7 +92,7 @@ kubectl apply -f k8s/app-service.yaml
 
 ---
 
-### 🔹 Step 9: Verify Pods
+### 🔹 Step 8: Verify Pods
 
 ```bash
 kubectl get pods
@@ -109,7 +100,7 @@ kubectl get pods
 
 ---
 
-### 🔹 Step 10: Test API using Postman
+### 🔹 Step 9: Test API using Postman
 
 * Use endpoints:
 
@@ -120,7 +111,7 @@ kubectl get pods
 
 ---
 
-### 🔹 Step 11: Verify Data in MySQL Pod
+### 🔹 Step 10: Verify Data in MySQL Pod
 
 ```bash
 kubectl get pods
@@ -134,9 +125,9 @@ USE <db_name>;
 SELECT * FROM <table_name>;
 ```
 
----
+---0
 
-### 🔹 Step 12: Access Kubernetes Dashboard
+### 🔹 Step 11: Access Kubernetes Dashboard
 
 Start proxy:
 
@@ -152,7 +143,7 @@ http://<EC2-IP>:8001/api/v1/namespaces/kubernetes-dashboard/services/http:kubern
 
 ---
 
-### 🔹 Step 13: Access Application
+### 🔹 Step 12: Access Application
 
 ```bash
 kubectl port-forward svc/springboot-crud-svc 8081:8080
@@ -180,10 +171,6 @@ http://<EC2-IP>:8081
 ### ❌ Docker push access denied
 
 ✔ Ensure correct Docker username
-
-### ❌ Port already in use
-
-✔ Use different port (8081 instead of 8080)
 
 ### ❌ ImagePullBackOff
 
