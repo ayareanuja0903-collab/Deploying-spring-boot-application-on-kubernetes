@@ -14,24 +14,7 @@ The application is containerized using Docker and deployed on a Kubernetes clust
 * Docker
 * Kubernetes (Minikube)
 * AWS EC2 (Ubuntu)
-
----
-
-## 📁 Project Structure
-
-```
-SpringBootOnK8S_PS/
-│
-├── Dockerfile
-├── pom.xml
-├── target/
-│   └── springboot-crud.jar
-│
-├── k8s/
-│   ├── mysql-deployment.yaml
-│   ├── mysql-service.yaml
-│   ├── app-deployment.yaml
-│   ├── app-service.yaml
+  
 ```
 
 ---
